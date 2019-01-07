@@ -11,10 +11,12 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js"
+);
 
 importScripts(
-  "/royate-react-app/precache-manifest.9eef07021e411b95d1ea478738fdd4f8.js"
+  "/royate-app-react-website/precache-manifest.9eef07021e411b95d1ea478738fdd4f8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +30,9 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/royate-react-app/index.html", {
-  
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
-});
+workbox.routing.registerNavigationRoute(
+  "/royate-app-react-website/index.html",
+  {
+    blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/]
+  }
+);
