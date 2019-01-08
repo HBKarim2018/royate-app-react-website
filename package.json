@@ -2,9 +2,11 @@
   "name": "royate-website",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://HBKarim2018.github.io/royate-react-app/",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
@@ -16,6 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
